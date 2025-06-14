@@ -810,6 +810,7 @@ def get_driver_by_config(config_dict):
                 if len(config_dict["advanced"]["ticketplus_account"]) > 1:
                     homepage = "https://ticketplus.com.tw/"
 
+            homepage = "http://127.0.0.1:16888/settings.html"
             print("goto url:", homepage)
             driver.get(homepage)
             time.sleep(3.0)
